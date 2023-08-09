@@ -17,7 +17,7 @@ emailjs
     document.getElementById("subject").value = "";
     document.getElementById("message").value = "";
     console.log(res);
-    alert("your email has been sent successfully!");
+    alert("Your email has been sent successfully!");
   })
   .catch((err) => console.log(err));
 
