@@ -1617,6 +1617,19 @@ background-color:none;
   background: #E13A4D;
 }
 
+.contact .php-email-form button[type=button] {
+  background: #E13A4D;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=button]:hover {
+  background: #E13A4D;
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);

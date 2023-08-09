@@ -1,13 +1,29 @@
 function sendEmail() {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "sender@email_address.com",
-    Password: "Enter your password",
-    To: "first_username@gmail.com, second_username@gmail.com",
-    From: "sender@email_address.com",
-    Subject: "Sending Email using javascript",
-    html: "<h1>GeeksforGeeks</h1><p>A computer science portal</p>",
-  }).then(function (message) {
-    alert("Mail has been sent successfully");
-  });
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+const serviceID = "service_ih3z8k6";
+const templateID = "template_bmj1wqh";
+
+emailjs
+  .send(serviceID, templateID, params)
+  .then((res) => {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+    console.log(res);
+    alert("your email has been sent successfully!");
+  })
+  .catch((err) => console.log(err));
+
+
+
 }
+
+
+

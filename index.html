@@ -39,6 +39,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("W9D3Pq8NWyG4uvMQm");
+    })();
+  </script>
 </head>
 
 <body>
@@ -644,8 +651,8 @@ Collect feedback from attendees to identify areas for improvement for future eve
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Emails:</h4>
-                <p>deborahkabutey51@gmail.com</p>
-                <p>afuamason32@gmail.com</p>
+                <!-- <p>deborahkabutey51@gmail.com</p>
+                <p>afuamason32@gmail.com</p> -->
               
 
               </div>
@@ -653,7 +660,7 @@ Collect feedback from attendees to identify areas for improvement for future eve
               <div class="phone" title="contact information">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+233 54 924 2958</p>
+                <!-- <p>+233 54 924 2958</p> -->
               </div>
 
             </div>
@@ -662,7 +669,7 @@ Collect feedback from attendees to identify areas for improvement for future eve
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form title="form submission"  method="post" role="form" class="php-email-form">
+            <form title="form submission"  role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -675,14 +682,14 @@ Collect feedback from attendees to identify areas for improvement for future eve
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="8" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button role="button" title="button" type="submit"  onclick="sendEmail()">Send Message</button></div>
+              <div class="text-center"><button role="button" title="button" type="button" onclick="sendEmail()" >Send Message</button></div>
             </form>
 
           </div>
@@ -734,8 +741,8 @@ Collect feedback from attendees to identify areas for improvement for future eve
               <p>
               Teshie <br>
                 
-                <strong>Phone:</strong> +233 54 924 2958<br>
-                <strong>Email:</strong> deborahkabutey51@gmail.com,<br>afuamason32@gmail.com
+                <strong>Phone:</strong> <br>
+                <strong>Email:</strong><br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -771,7 +778,7 @@ Collect feedback from attendees to identify areas for improvement for future eve
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
