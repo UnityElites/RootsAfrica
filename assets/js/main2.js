@@ -1,7 +1,6 @@
-$("#loader-cont").hide();
 
 function sendEmail() {
-  $("#loader-cont").show();
+document.getElementById("loader-cont").style.display = "flex";
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
@@ -15,7 +14,7 @@ function sendEmail() {
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {   
-       $("#loader-cont").hide();
+document.getElementById("loader-cont").style.display = "none";
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("subject").value = "";
